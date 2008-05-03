@@ -3,7 +3,7 @@ Name:     	gpicview
 Version:	0.1.9
 Release:	%mkrel 2
 License:	GPLv2+
-Group:		Graphical desktop/GNOME
+Group:		Graphics
 Source0: 	http://dfn.dl.sourceforge.net/sourceforge/lxde/%name-%version.tar.gz
 URL:		http://lxde.sourceforge.net/gpicview/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
