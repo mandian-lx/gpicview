@@ -1,15 +1,10 @@
 Summary:	A Simple and Fast Image Viewer for X
 Name:     	gpicview
-Version:	0.1.9
-Release:	%mkrel 4
+Version:	0.1.10
+Release:	%mkrel 1
 License:	GPLv2+
 Group:		Graphics
 Source0: 	http://dfn.dl.sourceforge.net/sourceforge/lxde/%name-%version.tar.gz
-# Don't empty files when trying to save in unsupported file format
-# http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=498394
-Patch0:		gpicview-0.1.9-dontsavegif.patch
-Patch1:		gpicview-0.1.9-CVE-2008-3791.patch
-Patch2:		gpicview-0.1.9-CVE-2008-3904.patch
 URL:		http://lxde.sourceforge.net/gpicview/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires:	gtk+2-devel jpeg-devel desktop-file-utils
@@ -25,9 +20,6 @@ It features:
 
 %prep
 %setup -q
-%patch0 -p1 -b .dontsavegif
-%patch1 -p1 -b .CVE-2008-3791
-%patch2 -p1 -b .CVE-2008-3904
 
 %build
 %configure2_5x
