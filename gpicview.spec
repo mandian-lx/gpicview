@@ -5,6 +5,7 @@ Release:	%mkrel 1
 License:	GPLv2+
 Group:		Graphics
 Source0: 	http://dfn.dl.sourceforge.net/sourceforge/lxde/%name-%version.tar.gz
+Patch0:		gpicview-0.1.10-new-cflags.patch
 URL:		http://lxde.sourceforge.net/gpicview/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires:	gtk+2-devel jpeg-devel desktop-file-utils
@@ -20,6 +21,7 @@ It features:
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
 %configure2_5x
