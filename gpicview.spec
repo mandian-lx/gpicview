@@ -1,7 +1,7 @@
 Summary:	A Simple and Fast Image Viewer for X
 Name:     	gpicview
 Version:	0.1.11
-Release:	%mkrel 2
+Release:	%mkrel 3
 License:	GPLv2+
 Group:		Graphics
 Source0: 	http://dfn.dl.sourceforge.net/sourceforge/lxde/%name-%version.tar.gz
@@ -37,6 +37,9 @@ desktop-file-install --vendor='' \
 	--dir=%buildroot%_datadir/applications \
 	--remove-category='Application' \
 	--remove-category='Core' \
+	--remove-category='Utility' \
+	--remove-category='Photography' \
+	--remove-category='RasterGraphics' \
 	%buildroot%_datadir/applications/*.desktop
 
 %clean
