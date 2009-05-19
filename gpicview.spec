@@ -8,6 +8,7 @@ Source0: 	http://dfn.dl.sourceforge.net/sourceforge/lxde/%name-%version.tar.gz
 URL:		http://www.lxde.org/gpicview/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires:	gtk+2-devel jpeg-devel desktop-file-utils
+BuildRequires:	intltool >= 0.40.0
 
 %description
 GPicView is a simple and fast image viewer for X.
