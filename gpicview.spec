@@ -5,7 +5,7 @@ Release:	%mkrel 1
 License:	GPLv2+
 Group:		Graphics
 Source0: 	http://dfn.dl.sourceforge.net/sourceforge/lxde/%name-%version.tar.gz
-URL:		http://www.lxde.org/gpicview/
+URL:		http://www.lxde.org/
 BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires:	gtk+2-devel jpeg-devel desktop-file-utils
 BuildRequires:	intltool >= 0.40.0
