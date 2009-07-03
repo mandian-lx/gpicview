@@ -1,6 +1,6 @@
 Summary:	A Simple and Fast Image Viewer for X
 Name:     	gpicview
-Version:	0.2.0
+Version:	0.2.1
 Release:	%mkrel 1
 License:	GPLv2+
 Group:		Graphics
