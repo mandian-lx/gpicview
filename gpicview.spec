@@ -1,12 +1,11 @@
 Summary:	A Simple and Fast Image Viewer for X
 Name:     	gpicview
-Version:	0.2.2
-Release:	%mkrel 1
+Version:	0.2.3
+Release:	1
 License:	GPLv2+
 Group:		Graphics
 Source0: 	http://dfn.dl.sourceforge.net/sourceforge/lxde/%name-%version.tar.gz
 URL:		http://www.lxde.org/
-BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires:	gtk+2-devel jpeg-devel desktop-file-utils
 BuildRequires:	intltool >= 0.40.0
 
@@ -41,21 +40,7 @@ desktop-file-install --vendor='' \
 	--remove-category='RasterGraphics' \
 	%buildroot%_datadir/applications/*.desktop
 
-%clean
-rm -rf %{buildroot}
-
-%if %mdkversion < 200900
-%post  
-%{update_menus}
-%endif
-
-%if %mdkversion < 200900
-%postun
-%{clean_menus}
-%endif
-
 %files -f %{name}.lang
-%defattr(-, root, root)
 %{_bindir}/%name
 %{_datadir}/applications/*.desktop
 %{_datadir}/%name
