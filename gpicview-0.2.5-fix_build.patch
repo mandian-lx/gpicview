@@ -1,0 +1,12 @@
+--- gpicview-0.2.5/src/main-win.c
++++ gpicview-0.2.5/src/main-win.c
+@@ -377,8 +377,7 @@
+         image_list_open_dir( mw->img_list, file_path, NULL );
+         image_list_sort_by_name( mw->img_list, GTK_SORT_DESCENDING );
+         if (image_list_get_first(mw->img_list))
+-            main_win_open(mw, image_list_get_current_file_path(mw->img_list), zoom);
+-        return;
++            return main_win_open(mw, image_list_get_current_file_path(mw->img_list), zoom);
+     }
+ 
+ 
